@@ -1,0 +1,13 @@
+[Unit]
+Description=Hello World Node.js App
+After=network.target
+
+[Service]
+Type=simple
+User=fergo04
+WorkingDirectory=/home/fergo04/Documentos/HelloWorld
+ExecStart=/usr/bin/node app.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
