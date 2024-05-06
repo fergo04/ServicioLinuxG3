@@ -1,0 +1,11 @@
+[Unit]
+Description=Update Hello World App from GitHub Deployment branch
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/fergo04/Documentos/HelloWorld/update_service.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

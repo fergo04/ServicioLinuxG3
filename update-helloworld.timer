@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for updating Hello World app periodically
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+Unit=update-helloworld.service
+
+[Install]
+WantedBy=timers.target
